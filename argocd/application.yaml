@@ -9,8 +9,7 @@ spec:
     repoURL: https://github.com/mhbxii/todo-app-manifests.git
     targetRevision: HEAD
     path: base
-    directory:
-      recurse: true
+    kustomize: {}
   destination:
     server: https://kubernetes.default.svc
     namespace: todo
