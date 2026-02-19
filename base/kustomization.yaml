@@ -2,18 +2,18 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - namespace.yaml
-  - database/mysql-external-service.yaml
-  - database/mysql-secret.yaml
-  - backend/configmap.yaml
-  - backend/deployment.yaml
-  - backend/service.yaml
-  - frontend/deployment.yaml
-  - frontend/service.yaml
-  - frontend/ingress.yaml
+- namespace.yaml
+- database/mysql-external-service.yaml
+- database/mysql-secret.yaml
+- backend/configmap.yaml
+- backend/deployment.yaml
+- backend/service.yaml
+- frontend/deployment.yaml
+- frontend/service.yaml
+- frontend/ingress.yaml
 
 images:
-  - name: mhbx12/todo-backend
-    newTag: 2289c19eb01c1171c2e590f6594fa0cfbb4dc8cf
-  - name: mhbx12/todo-frontend
-    newTag: 2289c19eb01c1171c2e590f6594fa0cfbb4dc8cf
+- name: mhbx12/todo-backend
+  newTag: 38c4887c08b2c265ede596aaa9e1a9d80e9d7c59
+- name: mhbx12/todo-frontend
+  newTag: 38c4887c08b2c265ede596aaa9e1a9d80e9d7c59
