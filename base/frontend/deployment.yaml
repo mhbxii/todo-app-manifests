@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: mhbx12/todo-frontend:2289c19eb01c1171c2e590f6594fa0cfbb4dc8cf
+        image: mhbx12/todo-frontend
         imagePullPolicy: Always
         ports:
         - containerPort: 80
