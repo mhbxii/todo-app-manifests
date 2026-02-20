@@ -11,6 +11,7 @@ resources:
 - frontend/deployment.yaml
 - frontend/service.yaml
 - frontend/ingress.yaml
+- network-policies/mysql-access.yaml
 
 images:
 - name: mhbx12/todo-backend
